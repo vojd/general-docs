@@ -14,5 +14,9 @@ Granting all permissions
 
     GRANT ALL ON db_name.* TO 'username'@'localhost';
     
+Show users
+    
+    SELECT host, user, password FROM mysql.user;
+    
 # SysOp
 # Unix/Linux
