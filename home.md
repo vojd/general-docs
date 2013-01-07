@@ -10,7 +10,9 @@ General documentation on all sorts of topics
 #### Permissions
 
     GRANT SELECT,INSERT,UPDATE,DELETE ON db_name.* TO 'username'@'localhost';
-    
+Granting all permissions
+
+    GRANT ALL ON db_name.* TO 'username'@'localhost';
     
 # SysOp
 # Unix/Linux
