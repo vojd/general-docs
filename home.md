@@ -39,7 +39,7 @@ Renaming a database (using pipes). This requires that an empty db exists
 #### Show tables
     \d
 #### Show databases
-    \1
+    \l (note that's a lowercase L)
 #### Show columns
     \d table
 #### Describe table
