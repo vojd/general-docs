@@ -33,5 +33,17 @@ Renaming a database (using pipes). This requires that an empty db exists
 
     mysqldump old_db -p | mysql -D new_db -p
 
+## PSQL
+#### Connect
+    psql dbname username
+#### Show tables
+    \d
+#### Show databases
+    \1
+#### Show columns
+    \d table
+#### Describe table
+    \d+ table
+
 # SysOp
 # Unix/Linux
