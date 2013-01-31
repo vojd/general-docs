@@ -44,6 +44,10 @@ Renaming a database (using pipes). This requires that an empty db exists
     \d table
 #### Describe table
     \d+ table
-
+### Changing ownership
+    for tbl in `psql -qAt -c "select tablename from pg_tables where schemaname = 'public';" mydbname` ; do  
+               psql -c "alter table $tbl owner to mypsqluser" shirts ;     done
+### Admin panel
+    sudo -s; su - postgres; psql template1
 # SysOp
 # Unix/Linux
