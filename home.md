@@ -52,6 +52,7 @@ Renaming a database (using pipes). This requires that an empty db exists
 
 # Vim
 Autoindent 4 spaces
+
     set smartindent
     set tabstop=4
     set shiftwidth=4
