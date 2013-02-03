@@ -49,5 +49,13 @@ Renaming a database (using pipes). This requires that an empty db exists
                psql -c "alter table $tbl owner to mypsqluser" shirts ;     done
 ### Admin panel
     sudo -s; su - postgres; psql template1
+
+# Vim
+Autoindent 4 spaces
+    set smartindent
+    set tabstop=4
+    set shiftwidth=4
+    set expandtab
 # SysOp
 # Unix/Linux
+
