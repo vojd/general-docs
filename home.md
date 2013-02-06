@@ -156,6 +156,7 @@ Autoindent 4 spaces
 # Unix/Linux
 ## Virtualenvwrapper
 In .bashrc 
+
     # virtualenvwrapper
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
     export WORKON_HOME=~/.envs
