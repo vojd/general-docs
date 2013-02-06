@@ -154,4 +154,11 @@ Autoindent 4 spaces
     set expandtab
 
 # Unix/Linux
-
+## Virtualenvwrapper
+In .bashrc 
+    # virtualenvwrapper
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+    export WORKON_HOME=~/.envs
+    if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    source /usr/local/bin/virtualenvwrapper.sh
+    fi
