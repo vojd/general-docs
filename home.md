@@ -163,3 +163,16 @@ In .bashrc
     if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
     fi
+
+## Homebrew
+``brew update`` fails
+
+    cd `brew --repository`
+    git reset --hard HEAD
+    brew update
+If that doesn't work, try
+    
+    cd `brew --repository`
+    git reset --hard origin/master
+    brew update
+    
