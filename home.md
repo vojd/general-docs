@@ -176,3 +176,13 @@ If that doesn't work, try
     git reset --hard origin/master
     brew update
     
+## Emacs
+### Emacs Live
+Installation
+
+    bash <(curl -fksSL https://raw.github.com/overtone/emacs-live/master/installer/install-emacs-live.sh)
+    
+If chosing to create a custom pack then it will be created in ``~/.live-packs/username-pack/``
+
+This name can be changed in ``~/.emacs-live.el``. This file defines where to look for user packs. A good idea would be to move this into the .live-packs-directory. Doesn't feel clean to have two emacs-related dotfiles outside .emacs.d/
+
