@@ -186,3 +186,12 @@ If chosing to create a custom pack then it will be created in ``~/.live-packs/us
 
 This name can be changed in ``~/.emacs-live.el``. This file defines where to look for user packs. A good idea would be to move this into the .live-packs-directory. Doesn't feel clean to have two emacs-related dotfiles outside .emacs.d/
 
+
+## Python
+Console thingies
+
+    import readline
+    import rlcomplete
+    readline.parse_and_bind('tab: complete')
+    
+    
