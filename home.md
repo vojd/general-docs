@@ -50,6 +50,20 @@ Renaming a database (using pipes). This requires that an empty db exists
 ### Admin panel
     sudo -s; su - postgres; psql template1
 
+## Redis
+Start up
+
+    redis-server
+  
+Connect
+
+    redis-cli -h localhost -p <port> -a password
+
+Delete all keys
+  
+    flushall
+  
+  
 # Nginx
 Sample ``nginx.conf``
 
