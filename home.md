@@ -1,5 +1,10 @@
 General documentation on all sorts of topics
 
+# Git
+See what files changed from the last commit
+
+    git diff-tree --no-commit-id --name-only -r <hash>
+    
 # Python
 # Django
 # Database
