@@ -7,6 +7,46 @@ See what files changed from the last commit
     
 # Python
 # Django
+## Django Compressor
+
+    pip install django-compressor
+    
+Compiling with Googles Closure compiler http://closure-compiler.googlecode.com/files/compiler-latest.zip
+Unpack into ``bin/`` folder of Django project.
+
+Sample ``settings.py``
+
+
+    #####################
+    # DJANGO COMPRESSOR #
+    #####################
+    COMPRESS_URL = STATIC_URL
+    COMPRESS_ENABLED = True
+    COMPRESS_OFFLINE = False
+    COMPRESS_CSS_FILTERS = [
+        'compressor.filters.css_default.CssAbsoluteFilter',
+        'compressor.filters.cssmin.CSSMinFilter',
+        ]
+    COMPRESS_JS_FILTERS = [
+        'compressor.filters.closure.ClosureCompilerFilter',
+        ]
+    COMPRESS_CLOSURE_COMPILER_BINARY = 'java -jar ' + os.path.join(PROJECT_ROOT, 'bin/compiler.jar')
+    
+    COMPRESS_PRECOMPILERS = (
+        ('text/coffeescript', 'coffee --compile --stdio'),
+        ('text/x-scss', 'sass --scss --debug-info -I static/css/ {infile} {outfile}'),
+    )
+    COMPILER_FORMATS = {
+        '.sass' : {
+            'binary.path' : 'sass',
+            'arguments' : '*.sass *.css'
+        },
+        '.scss' : {
+            'binary.path' : 'sass',
+            'arguments' : '*.scss *.css'
+        }
+    }
+    
 # Database
 ## MySQL
 #### Create user
